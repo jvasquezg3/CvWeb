@@ -1,0 +1,394 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Esta línea habilita el desplazamiento suave */
+}
+
+header {
+    background-color: #071421;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px; /* Ajusta este valor según sea necesario */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 90px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    flex: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+nav {
+    background-color: #334;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 1.9em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-right: 1.3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/**************************************/
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    flex-wrap: wrap;
+    background-color: #FBF5E5;
+}
+
+.profile {
+    display: flex;
+    background-color: #FBF5E5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.foto{
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img{
+    width: 200px;
+}
+
+
+.info {
+    padding: 1em;
+    flex: 1;
+    text-align: center;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Estilos generales */
+.formacion{
+    background-color: #071421;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FBF5E5;
+    padding-top: 40px;
+}
+
+
+.arriba{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px 20px 0px;
+    
+    
+}
+
+.abajo{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px 80px 0px;
+}
+
+.timeline-item{
+    box-shadow: 4px 4px 4px #ff7f2a;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Animación de desplazamiento hacia arriba */
+}
+
+.time{
+    padding: 2px;
+    margin: 0;
+    
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .arriba, .abajo {
+        grid-template-columns: 80%; /* Cambio a una columna para dispositivos móviles */
+        gap: 30px; /* Ajuste de espacio entre elementos para dispositivos móviles */
+        padding: 0px 0px; /* Ajuste de padding para dispositivos móviles */
+    }
+
+    .abajo  {
+        padding-bottom: 60px; /* Ajuste adicional de padding para dispositivos móviles */
+        padding-top: 40px;
+    }
+}
+
+/***********************************/
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 50px;
+}
+
+@media (min-width: 768px) {
+    .experience {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.job {
+    box-shadow: 3px 3px 4px #ff7f2a;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.titulo, .titulos {
+    text-align: center;
+}
+
+.laboral {
+    background-color: #FBF5E5;
+}
+
+.titulocono {
+    text-align: center;
+    color: #fff;
+}
+
+.lenguaje{
+    text-align: left;
+    color: #fff;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.tarjeta {
+    box-shadow: 4px 4px 4px #ff7f2a;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    border-color: #fff;
+    border: #fff;
+}
+
+.conocimiento {
+    margin: 0px;
+    background-color: #071421;
+    padding: 40px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: -15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 30px;
+    border-radius: 25px;
+    background-color: #76c7c0;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+body.loaded .progress-bar {
+    width: attr(data-percentage percent);
+}
+
+.cnt {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+}
+
+.option img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.option:hover {
+    background-color: #f2f2f2;
+}
+
+.name {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contacto {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+#scroll-to-top {
+    display: none; /* Ocultar inicialmente la flecha */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+#scroll-to-top img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#scroll-to-top:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    background-color: #334;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 1em;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
