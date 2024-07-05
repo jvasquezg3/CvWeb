@@ -286,6 +286,11 @@ main {
     color: #000;
 }
 
+.prbar{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 body.loaded .progress-bar {
     width: attr(data-percentage percent);
 }
