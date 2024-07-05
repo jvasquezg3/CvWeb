@@ -287,7 +287,14 @@ main {
 }
 
 .txtbar{
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.txtbar .prbar {
+    flex: 1;
+    text-align: center;
 }
 
 .prbar{
