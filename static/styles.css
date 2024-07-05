@@ -286,11 +286,14 @@ main {
     color: #000;
 }
 
+.txtbar{
+    display: inline;
+}
+
 .prbar{
     padding-left: 10px;
     padding-right: 10px;
     margin: 0;
-    display: inline;
     
 }
 
