@@ -291,7 +291,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 3px;
-    font-size: 8px;
+    font-size: 15px;
 }
 
 .txtbar .prbar {
