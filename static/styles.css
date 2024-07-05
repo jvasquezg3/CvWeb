@@ -275,6 +275,7 @@ main {
     background-color: #76c7c0;
     width: 0;
     transition: width 1s ease-in-out;
+    margin: 0.5px;
 }
 
 .progress-text {
