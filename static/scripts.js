@@ -1,7 +1,7 @@
 
 
 //Para que desplace hacía abajo según la opción
-/*document.querySelectorAll('nav a').forEach(anchor => {
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -13,9 +13,9 @@
             behavior: 'smooth'
         });
     });
-});*/
+});
 
-document.querySelectorAll('nav a').forEach(anchor => {
+/*document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -33,7 +33,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
         }
     });
 });
-
+*/
 
 //Animación línea de tiempo
 document.addEventListener('DOMContentLoaded', function() {
