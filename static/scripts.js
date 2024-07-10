@@ -35,6 +35,14 @@ document.querySelectorAll('nav a').forEach(anchor => {
 });
 */
 
+function openPDF() {
+    // URL del PDF que deseas abrir
+    var pdfUrl = './static/documents/JvasquezCV.pdf';
+    // Abrir el PDF en una nueva pestaña
+    window.open(pdfUrl, '_blank');
+}
+
+
 //Animación línea de tiempo
 document.addEventListener('DOMContentLoaded', function() {
     const timelineItems = document.querySelectorAll('.timeline-item');
