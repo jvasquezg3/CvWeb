@@ -1,7 +1,7 @@
 
 
 //Para que desplace hacía abajo según la opción
-document.querySelectorAll('nav a').forEach(anchor => {
+/*document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -12,6 +12,25 @@ document.querySelectorAll('nav a').forEach(anchor => {
             top: targetElement.offsetTop,
             behavior: 'smooth'
         });
+    });
+});*/
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        // Verificar si targetElement existe y tiene offsetTop
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        } else {
+            console.error(`Elemento con ID ${targetId} no encontrado.`);
+        }
     });
 });
 

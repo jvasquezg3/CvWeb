@@ -12,7 +12,7 @@ def index():
 @app.route('/download_cv')
 def download_cv():
     filename = 'JvasquezCV.pdf'
-    directory = 'static/documents'
+    directory = './static/documents'
     filepath = os.path.join(directory, filename)
     if os.path.isfile(filepath):
         return send_file(filepath, as_attachment=True)
